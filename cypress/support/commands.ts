@@ -35,3 +35,21 @@
 //     }
 //   }
 // }
+
+Cypress.Commands.add('login', (username:string, password:string) => {
+        cy.visit('https://automationteststore.com/index.php?rt=account/login')
+        cy.get('[id="loginFrm_loginname"]').type(username)
+        cy.get('[id="loginFrm_password"]').type(password)
+        cy.get('[title="Login"]').click()
+
+    })
+
+
+Cypress.Commands.add('login', (username:string, password:string) => {
+        cy.visit('https://automationteststore.com/index.php?rt=account/login')
+        cy.get('[id="loginFrm_loginname"]').type(username)
+        cy.get('[id="loginFrm_password"]').type(password)
+        cy.get('[title="Login"]').click()
+
+    })
+
