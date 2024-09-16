@@ -23,3 +23,34 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from failing the test
     return false;
 });
+
+
+/*
+declare namespace Cypress {
+    interface Chainable<Subject = any> {
+        login(username: string, password: string):Chainable<void>
+    }
+}
+
+
+ */
+
+//declare custom command for login //does not work - see index.ts
+
+/*
+declare global {
+    namespace Cypress {
+        interface Chainable {
+            login: (email: string, password: string) => Cypress.Chainable<void>
+        }
+    }
+}
+
+
+ */
+
+
+
+
+
+export {};

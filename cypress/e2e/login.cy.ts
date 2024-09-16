@@ -20,6 +20,7 @@ describe('LOGIN', () => {
             cy.get('.oxd-text--h6').should('be.visible')
             cy.url().should('eq', 'https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index')
         })
+
         it('Login - invalid password', () => {
             cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
             cy.get('input[name="username"]').type('Admin')
