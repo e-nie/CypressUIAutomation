@@ -36,7 +36,8 @@
 //   }
 // }
 
-Cypress.Commands.add('login', (username:string, password:string) => {
+
+Cypress.Commands.add('loginATS', (username:string, password:string) => {
         cy.visit('https://automationteststore.com/index.php?rt=account/login')
         cy.get('[id="loginFrm_loginname"]').type(username)
         cy.get('[id="loginFrm_password"]').type(password)
@@ -44,4 +45,30 @@ Cypress.Commands.add('login', (username:string, password:string) => {
 
     })
 
+Cypress.Commands.add('loginOrange', (username:string, password:string) => {
+        cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+        cy.get('input[name="username"]').type(username)
+        cy.get('input[name="password"]').type(password)
+        cy.get('button[type="submit"]').click()
+    })
 
+Cypress.Commands.add('loginPASV', (email:string, password:string) => {
+        cy.visit('https://coding.pasv.us/user/login')
+        cy.get('[id="normal_login_email"]').type(email)
+        cy.get('[id="normal_login_password"]').type(password)
+        cy.get('[type="submit"]').click()
+    })
+
+Cypress.Commands.add('loginTheInternetHeroku', (username:string, password:string) => {
+        cy.visit('https://the-internet.herokuapp.com/login')
+        cy.get('[id="username"]').type(username)
+        cy.get('[id="password"]').type(password)
+        cy.get('[type="submit"]').click()
+    })
+
+Cypress.Commands.add('loginDemoQA', (username:string, password:string) => {
+        cy.visit('https://demoqa.com/login')
+        cy.get('[id="userName"]').type(username)
+        cy.get('[id="password"]').type(password)
+        cy.get('[id="login"]').click()
+    })
