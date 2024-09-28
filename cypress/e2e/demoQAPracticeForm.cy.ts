@@ -12,21 +12,36 @@ describe.only('DEMOQA PRACTICE FORM', () => {
         cy.get('#subjectsInput').type('Finance')
         cy.get('#hobbies-checkbox-1').check({force: true})
         cy.get('#hobbies-checkbox-2').check({force: true})
+
         //Upload Picture
         cy.get('#uploadPicture').attachFile('little-samurais.jpg')
         cy.get('#currentAddress').type('Somewhere over the Rainbow')
+
         //Select State
         cy.get('#state').click()
         cy.get('#state').within(() => {
-            cy.get('#react-select-3-option-0').should('be.visible').click()
-        })
+        cy.get('#react-select-3-option-0').should('be.visible').click()
         cy.get('div[class$="-singleValue"]').should('contain', 'NCR')
+        })
+
+        // Select State - Natalya's option - 1:
+        // cy.contains('Select State').click()
+        // cy.get('[id="react-select-3-option-0"]').click()
+        // cy.get('[class$="-singleValue"]').should('contain', 'NCR')
+
+        // Select State - Natalya's option - 2:
+        cy.contains('Select State').click()
+        cy.get('[tabindex="-1"]').each($el=> {
+            $el.text() === 'NCR'? cy.wrap($el).click(): null
+        })
+        cy.get('[class$="-singleValue"]').should('contain', 'NCR')
+
         //Select City
         cy.get('#city').click()
         cy.get('#city').within(() => {
             cy.get('#react-select-4-option-0').should('be.visible').click()
         })
-        cy.get('div[class$="-singleValue"]').should('contain', 'Delhi')
+        cy.get('[class$="-singleValue"]').should('contain', 'Delhi')
         cy.get('#submit').click()
     })
 })
