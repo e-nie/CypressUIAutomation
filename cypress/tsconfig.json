@@ -14,5 +14,6 @@
   "include": [
     "**/*.ts",
     "cypress/support/e2e.ts"
-  ]
+  ],
+  "baseURL": "cypress"
 }
