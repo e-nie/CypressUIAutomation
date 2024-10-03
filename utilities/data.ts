@@ -1,4 +1,6 @@
-export const navBarValue: string[] = [
+import {NavBarValue, PromoSectionValue} from "../interface/interface";
+
+export const navBarValue: NavBarValue = [
     'Home',
     'Apparel & accessories',
     'Makeup',
@@ -7,4 +9,11 @@ export const navBarValue: string[] = [
     'Men',
     'Hair Care',
     'Books',
+]
+
+export const promoSectionValue: PromoSectionValue = [
+    'Fast shipping',
+    'Easy Payments',
+    'Shipping Options',
+    'Large Variety'
 ]
