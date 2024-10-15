@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 import {NavBarValue, PromoSectionValue} from "../interface/interface";
 
 export class HomePage {
