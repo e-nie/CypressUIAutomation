@@ -72,3 +72,12 @@ Cypress.Commands.add('loginDemoQA', (username:string, password:string) => {
         cy.get('[id="password"]').type(password)
         cy.get('[id="login"]').click()
     })
+
+Cypress.Commands.add('getIframeBody', (iframe:string) => {
+    return cy
+        .get(iframe)
+        .its('0.contentDocument.body') // access iFrame’s body
+        .should('not.be.empty') // wait for the body to be available
+        .then(cy.wrap) as Cypress.Chainable<JQuery<HTMLElement>>// wrap it so Cypress can interact
+});
+

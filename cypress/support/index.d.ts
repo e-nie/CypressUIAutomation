@@ -9,5 +9,7 @@ declare namespace Cypress {
         loginTheInternetHeroku(username: string, password: string): void
 
         loginDemoQA(username: string, password: string): void
+
+        getIframeBody(iframe: string): Cypress.Chainable<JQuery<HTMLElement>>
     }
 }
