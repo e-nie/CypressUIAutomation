@@ -9,7 +9,9 @@
       "cypress",
       "cypress-file-upload",
       "node"
-    ]
+    ],
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
   "include": [
     "**/*.ts",
