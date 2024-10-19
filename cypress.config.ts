@@ -8,4 +8,7 @@ export default defineConfig({
     },
     baseUrl: "https://automationteststore.com/"
   },
+  env: {
+
+  }
 });

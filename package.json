@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:chromium": "cypress open --e2e --browser chromium"
+    "cy:chromium": "cypress open --e2e --browser chromium",
+    "cy:chrome": "cypress open --e2e --browser chrome"
   },
   "keywords": [],
   "author": "",
