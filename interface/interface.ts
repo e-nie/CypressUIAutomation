@@ -13,6 +13,7 @@ export interface ContactData {
         lastName: string;
         email: string;
         message: string;
+
     },
     "registrationForm": {
         "firstName": string,
@@ -29,6 +30,7 @@ export interface ContactData {
         "email": string,
         "currentAddress": string,
         "permanentAddress": string
+
     }
 }
 

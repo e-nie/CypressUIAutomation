@@ -10,6 +10,7 @@
     "lastName": "Smith",
     "email": "invalid-email",
     "message": "This is a message with invalid email"
+
   },
   "registrationForm": {
     "firstName": "Gottfried",
@@ -26,5 +27,6 @@
     "email": "cozy@email.com",
     "currentAddress": "Somewhere over the Rainbow",
     "permanentAddress": "Home"
+
   }
 }
