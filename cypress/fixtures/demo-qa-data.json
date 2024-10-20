@@ -1,16 +1,4 @@
 {
-  "validSubmission": {
-    "firstName": "John",
-    "lastName": "Doe",
-    "email": "john.doe@example.com",
-    "message": "This is a valid message"
-  },
-  "invalidEmail": {
-    "firstName": "Jane",
-    "lastName": "Smith",
-    "email": "invalid-email",
-    "message": "This is a message with invalid email"
-  },
   "registrationForm": {
     "firstName": "Gottfried",
     "lastName": "Leibniz",
