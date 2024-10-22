@@ -17,6 +17,7 @@
 import './commands'
 import 'cypress-file-upload'
 import 'cypress-iframe'
+import 'cypress-real-events'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
