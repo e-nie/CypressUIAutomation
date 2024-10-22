@@ -11,7 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress-file-upload": "^5.0.8"
+    "cypress-file-upload": "^5.0.8",
+    "cypress-real-events": "^1.13.0"
   },
   "devDependencies": {
     "@types/cypress": "^1.1.3",
